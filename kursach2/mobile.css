@@ -1,0 +1,613 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: 'Bookman old style';
+}
+header{
+    height: 7vh;
+    width: 100%;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-bottom: #697644 4px solid;
+}
+.panel{
+    width: 30%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    color: #697644;
+    font-family: 'Bookman old style';
+}
+.kor{     
+    width: 55%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #697644;
+    font-family: 'Bookman old style';
+}
+.kor h2{
+    font-size: 1em;
+}
+.kor1{     
+    width: 55%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #697644;
+    font-family: 'Bookman old style';
+    font-size: 0.7em;
+}
+.kor2{     
+    width: 10%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #697644;
+    font-family: 'Bookman old style';
+    padding-right: 2%;
+    font-size: 0.7em;
+}
+.glav1:hover{
+    color: #697644;
+    text-decoration: none;
+}
+.glav1:active{
+    color: #697644;
+    text-decoration: none;
+}
+.glav1:visited{
+    color: #697644;
+    text-decoration: none;
+}
+.glav1:link{
+    text-decoration: none;
+    color: #697644;
+}
+.rklm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-bottom: #697644 4px solid;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+.rklm:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 1s ease;
+}
+.button {
+    position: absolute;
+    width: 40%;
+    left: 62%;
+    top: 48%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+.button a {
+    padding: 2% 4%;
+    text-align: center;
+    background: rgb(245, 245, 245);
+    color: #697644;
+    border: 2px solid #697644;
+    z-index: 1; 
+    text-decoration: none;
+}
+.rklm:hover .button {
+    opacity: 1;
+}
+.rek{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.tovar-container {
+    margin-top: 3%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:3%;
+}
+.tovar-container-zakaz {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tovar{
+    width: 90%;
+    height: 70%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    box-shadow: 0 0 30px 5px gray;
+    margin-bottom: 3%;
+    margin-right: 6%;
+}
+.photo{
+    height: 35vh;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2% ;
+}
+.photo-admin{
+    height: 70%;
+    width: 60%;
+    margin-bottom: 3%;
+}
+.tov{
+    height: 100%;
+    width: auto;
+    transition: transform .2s;
+}
+.tov:hover {
+    transform: scale(1.1);
+}
+.tov1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+#bukvi{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+.nazv{
+    color: #697644;
+    font-family: 'Bookman old style';
+    display: flex;
+    align-self:flex-start;
+    font-size: 0.7em;
+    padding-bottom: 5%;
+}
+
+.opis{
+    color: #697644;
+    font-family: 'Bookman old style';
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    padding-bottom: 2%;
+    height: auto;
+}
+.opis1{
+    color: #697644;
+    font-family: 'Bookman old style';
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    height: auto;
+    padding: 2%;
+}
+p{
+    padding-top: 1.7%;
+    padding-bottom: 3%;
+}
+.noti{
+    padding-left: 4%;
+}
+.ob{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #697644;
+    font-family: 'Bookman old style';
+    font-size: 1.1em;
+    margin-bottom: 2%;
+    width: 70%;
+}
+.pokup{
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.knop{
+    background-color: #697644;
+    font-family: 'Bookman old style';
+    color: whitesmoke ;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    border: none;
+}
+.knop:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.knop:active{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.knop:visited{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.knop:link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer{
+    margin-top: 3%;
+    height: 11.2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bookman old style';
+    color: whitesmoke;
+    background-color: #697644;
+    font-size: 0.6em;
+}
+.infa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    margin: 3%;
+    padding-bottom: 4%;
+}
+.top{
+    font-size: 1.3em;
+}
+.top:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.top:active{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.top:visited{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.top:link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.forma{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-form {
+    margin-top: 2%;
+    width:70%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.form-form input{
+    width: 70%;
+    height: 5vh;
+    color: #697644; 
+    background: whitesmoke;
+    font-family: 'Bookman old style';
+    border: none;
+    padding-left: 3%;
+    font-size: 1.3em;
+    border: 3px solid #697644;
+    display: flex;
+    flex-direction: row;
+
+}
+.form-zakaz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+input{
+    width: 100%;
+    height: 4vh;
+    margin: 1.3%;
+    font-size: large;
+    align-self: center;
+    font-family: 'Bookman old style';
+    color: #697644;
+    padding: 2.4%;
+    border: 2px solid #697644;
+}
+
+input:active, button:focus {
+    outline: none !important;
+}
+input::-moz-focus-inner {
+    border: 0 !important;
+}
+.avtor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+.submit{
+    width: 100%;
+    height: 8%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 3%;
+}
+.knoppka{
+    background-color:  #697644;
+    height: 80%;
+    width: 100%;
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Bookman old style';
+    color: whitesmoke;
+    cursor: pointer;
+}
+.knoppka-zakaz{
+    margin: 2%;
+    background-color:  #697644;
+    height: 4vh;
+    width: 100%;
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Bookman old style';
+    color: whitesmoke;
+    cursor: pointer;
+}
+.btn{
+    background-color: #697644;
+    font-family: 'Bookman old style';
+    color: whitesmoke ;
+    font-size: 1.2em;
+    width: 15%;
+    height: 5vh;
+}
+.knop1{
+    background-color: #697644;
+    font-family: 'Bookman old style';
+    color: whitesmoke ;
+    font-size: 0.76em;
+    width: 40%;
+    height: 4vh;
+    margin-top: 3% ;
+    margin-bottom: 1%;
+    border: none;
+}
+.zak{
+    margin-top: 4%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: #697644 4px solid;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 0.5em;
+}
+.zag{
+    font-family: 'Bookman old style';
+    color: #697644 ;
+    font-size: 1.6em;
+    margin-top: 2%;
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 1em;
+}
+.p{
+    padding-top: 3%;
+    font-family: 'Bookman old style';
+    color:#697644;
+    font-size: 1.8em;
+}
+.h4{
+    color: #697644;
+    font-family: 'Bookman old style';
+    margin: 2%;
+    font-size: 1.3em;
+}
+h5{
+    font-family: 'Bookman old style';
+    color:#697644;
+    font-size: 1.8em;
+}
+main{
+    height: 80vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-regist-vxod{
+    height: 78vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registr{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 1%;
+    font-family: 'Bookman old style';
+    color: #697644;
+}
+.registr1{
+    color: #697644;
+    font-size: 1em;
+    font-family: 'Bookman old style';
+}
+.registr2:hover{
+    color: #697644;
+    text-decoration: none;
+    border-bottom: 1px solid #697644;
+}
+.registr2:active{
+    color: #697644;
+    text-decoration: none;
+    border-bottom: 1px solid #697644;
+}
+.registr2:visited{
+    color: #697644;
+    text-decoration: none;
+    border-bottom: 1px solid #697644;
+}
+.registr2:link{
+    text-decoration: none;
+    color: #697644;
+    border-bottom: 1px solid #697644;
+}
+.registr3{
+    text-align: center;
+    font-size: 2.7em;
+    margin-bottom: 1%;
+    font-family: 'Bookman old style';
+    color: #697644;
+}
+.radio-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    font-family: 'Bookman old style' ;
+    color: #697644;
+}
+#cash{
+    accent-color: #697644;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+#transfer{
+    accent-color: #697644;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+select{
+    width: 100%;
+    height: 4vh;
+    font-size: 1.2em;
+    font-family: 'Bookman old style';
+    border: 2px solid #697644;
+    color: #697644;
+    padding-left: 2%;
+}
+.update:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.update:active{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.update:visited{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.update:link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.message-er{
+    color: #ff0000;
+    font-family: 'Bookman old style';
+    font-size: 1.2em;
+    font-style: italic;
+}
+.error{
+    color: #ff0000;
+    font-family: 'Bookman old style';
+    font-size: 1em;
+    font-style: italic;
+    transition: opacity 0.5s ease;
+    opacity: 1; 
+    }
+.fade-out {
+    opacity: 0;
+}
+.error1{
+    color: #ff0000;
+    font-size: 1em;
+}
